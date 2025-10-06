@@ -1,5 +1,6 @@
 readonly PATH_TO_PROJECT=$(pwd)/XcodeBenchmark.xcworkspace
 readonly PATH_TO_DERIVED=$(pwd)/DerivedData
+# -derivedDataPath "$PATH_TO_DERIVED" \
 
 clear
 
@@ -17,7 +18,7 @@ if [ -n "$PATH_TO_PROJECT" ]; then
 	xcodebuild -workspace "$PATH_TO_PROJECT" \
 			   -scheme XcodeBenchmark \
 			   -destination generic/platform=iOS \
-			   -derivedDataPath "$PATH_TO_DERIVED" \
+			   
 			   COMPILATION_CACHE_ENABLE_CACHING=True \
 			   build
 			   
