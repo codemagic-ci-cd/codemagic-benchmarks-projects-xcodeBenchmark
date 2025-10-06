@@ -18,7 +18,8 @@ if [ -n "$PATH_TO_PROJECT" ]; then
 			   -scheme XcodeBenchmark \
 			   -destination generic/platform=iOS \
 			   -derivedDataPath "$PATH_TO_DERIVED" \
-			   build
+			   build \
+			   COMPILATION_CACHE_ENABLE_CACHING=True
 
 	echo "System Version:" "$(sw_vers -productVersion)"
 	xcodebuild -version | grep "Xcode"
