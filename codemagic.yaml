@@ -54,8 +54,8 @@ workflows:
       xcode: 26
     triggering:
       <<: *push_event
+    scripts:
+      - *runBenchmarkTests
     cache:
       cache_paths:
         - $HOME/Library/Developer/Xcode/DerivedData/CompilationCache.noindex
-    scripts:
-      - *runBenchmarkTests
