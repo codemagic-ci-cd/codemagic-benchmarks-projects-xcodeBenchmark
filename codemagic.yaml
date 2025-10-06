@@ -59,3 +59,5 @@ workflows:
     cache:
       cache_paths:
         - $HOME/Library/Developer/Xcode/DerivedData/CompilationCache.noindex
+    artifacts:
+      - /tmp/xcodebuild_logs/*.log

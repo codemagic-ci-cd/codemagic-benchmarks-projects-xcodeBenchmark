@@ -18,7 +18,6 @@ if [ -n "$PATH_TO_PROJECT" ]; then
 	xcodebuild -workspace "$PATH_TO_PROJECT" \
 			   -scheme XcodeBenchmark \
 			   -destination generic/platform=iOS \
-			   
 			   COMPILATION_CACHE_ENABLE_CACHING=True \
 			   build
 			   
