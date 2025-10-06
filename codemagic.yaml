@@ -56,6 +56,6 @@ workflows:
       <<: *push_event
     cache:
       cache_paths:
-        - ~/Library/Developer/Xcode/CompilationCache.noindex
+        - $HOME/Library/Developer/Xcode/DerivedData/CompilationCache.noindex
     scripts:
       - *runBenchmarkTests
